@@ -1,0 +1,10 @@
+name: thing
+run-name: fixing site/api
+on:  
+  release:
+    types: [published]
+jobs:
+  fix:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
