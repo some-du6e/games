@@ -12,4 +12,28 @@ h1 {
 }
 * {
   white-space: nowrap;
+  color: white;
 }
+header {
+    border-radius: 0px 0px 30px 30px;
+    background-image: linear-gradient(rgb(0, 0, 0), hwb(0 80% 80%));
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+header * {
+    display: inline;
+    margin: 20px;
+    
+ }
+ body {
+    height: 100vh;
+    margin-top: 80px;
+    padding: 0px;
+    background-size: cover;
+    background-color: hwb(0 80% 80%);
+ }
