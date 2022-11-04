@@ -11,3 +11,4 @@ jobs:
       - run: echo "seeing what is in the dir"
       - run: echo "------------[DIR]------------"
       - run: ls -a
+      - run: echo "please fucking run"
