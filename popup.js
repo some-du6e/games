@@ -1,4 +1,4 @@
-versionrn = 2
+versionrn = 0
 
 function writecss(css) {
    var styleSheet = document.createElement("style")
@@ -24,5 +24,12 @@ function isnewversion() {
    }
 }
 
+function main() {
+   if (isnewversion) {
+     
+   }else {
+      
+   }
+}
 //writecss("#updatescreen {visibility: visible !important;}")
 //writecss("#menu {display: none !important;}")

@@ -13,7 +13,7 @@ h1 {
 * {
   white-space: nowrap;
 }
-#updatescreen {visibility: hidden;}
+#updatescreen {display: none;}
 #menu {visibility: visible;}
 .vertLine {
   border-left: 2px solid rgb(58, 59, 58);
