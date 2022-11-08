@@ -1,5 +1,4 @@
-versionrn = 1
-
+versionrn = 2
 
 function writecss(css) {
    var styleSheet = document.createElement("style")
@@ -25,5 +24,5 @@ function isnewversion() {
    }
 }
 
-writecss("#updatescreen {visibility: visible !important;}")
-writecss("#menu {display: none !important;}")
+//writecss("#updatescreen {visibility: visible !important;}")
+//writecss("#menu {display: none !important;}")
