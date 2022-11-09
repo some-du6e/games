@@ -16,7 +16,7 @@ h1 {
 }
 header {
     border-radius: 0px 0px 30px 30px;
-    background-image: linear-gradient(rgb(0, 0, 0), hwb(0 80% 80%));
+    background-image: linear-gradient(rgb(54, 57, 63), hwb(0 80% 80%));
     position: fixed;
     left: 0;
     right: 0;
