@@ -1,22 +1,29 @@
-versionrn = 0
-
+versionrn = 2
+function sleep(milliseconds) {
+   const date = Date.now();
+   let currentDate = null;
+   do {
+     currentDate = Date.now();
+   } while (currentDate - date < milliseconds);
+ }
 function writecss(css) {
    var styleSheet = document.createElement("style")
    styleSheet.innerText = css
    document.head.appendChild(styleSheet)
 }
 
-function httpGet(theUrl)
+async function httpGet(theUrl)
 {
-    var xmlHttp = new XMLHttpRequest();
-    xmlHttp.open( "GET", theUrl, false ); // false for synchronous request
-    xmlHttp.send( null );
-    return xmlHttp.responseText;
+   let response = await fetch(theUrl);
+   let data = await response.text();
+   return data
 }
 
 
 function isnewversion() {
-   var get = httpGet("https://cors-anywhere.herokuapp.com/some-du6e.github.io/games/version")
+   var get = httpGet("https://some-du6e.github.io/games/version")
+   
+   console.log(get)
    if (versionrn == get) {
       return true
    }else {
@@ -24,6 +31,19 @@ function isnewversion() {
    }
 }
 
+function hasinternet() {
+   var get = httpGet("https://some-du6e.github.io/games/internetcheck")
+   var get2 = get
+   console.log(get2)
+   sleep(500)
+   console.log(get2)
+   if (get2== "true") {
+      get = true
+   }else {
+      get2 = false
+   }
+   
+}
 function main() {
    if (isnewversion) {
      
@@ -33,3 +53,4 @@ function main() {
 }
 //writecss("#updatescreen {visibility: visible !important;}")
 //writecss("#menu {display: none !important;}")
+hasinternet()
