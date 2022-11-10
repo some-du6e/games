@@ -35,5 +35,5 @@ header * {
     margin-top: 80px;
     padding: 0px;
     background-size: cover;
-    background-color: hwb(0 80% 80%);
+    background-color: rgb(54, 57, 63);
  }
