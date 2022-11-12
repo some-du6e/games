@@ -3,30 +3,45 @@ function sleep(milliseconds) {
    const date = Date.now();
    let currentDate = null;
    do {
-     currentDate = Date.now();
+      currentDate = Date.now();
    } while (currentDate - date < milliseconds);
- }
+}
 function writecss(css) {
    var styleSheet = document.createElement("style")
    styleSheet.innerText = css
    document.head.appendChild(styleSheet)
 }
 
-async function httpGet(theUrl)
-{
-   let response = await fetch(theUrl);
-   let data = await response.text();
-   return data
+
+async function httpGet(url) {
+      try {
+        const response = await fetch(url, {
+          method: 'GET',
+          headers: {
+            accept: 'text/plain',
+          },
+        });
+    
+        if (!response.ok) {
+          throw new Error(`Error! status: ${response.status}`);
+        }
+    
+        const result = await response.json();
+        return result;
+      } catch (err) {
+        console.log(err);
+      }
 }
+
 
 
 function isnewversion() {
    var get = httpGet("https://some-du6e.github.io/games/version")
-   
+
    console.log(get)
    if (versionrn == get) {
       return true
-   }else {
+   } else {
       return false
    }
 }
@@ -37,20 +52,15 @@ function hasinternet() {
    console.log(get2)
    sleep(500)
    console.log(get2)
-   if (get2== "true") {
+   if (get2 == "true") {
       get = true
-   }else {
+   } else {
       get2 = false
    }
-   
 }
-function main() {
-   if (isnewversion) {
-     
-   }else {
-      
-   }
-}
-//writecss("#updatescreen {visibility: visible !important;}")
-//writecss("#menu {display: none !important;}")
-hasinternet()
+
+
+writecss("#updatescreen {display: block !important}")
+writecss("#menu {display: none !important}")
+var idfk = httpGet("https://www.google.com")
+console.log(idfk)
