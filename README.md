@@ -1,2 +1,1 @@
-# games
-chrome extencion that has a bunch of good games
+thanks to hyperplexed for the main page src code
