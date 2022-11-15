@@ -13,25 +13,26 @@ function writecss(css) {
 }
 
 
-async function httpGet(url) {
-      try {
-        const response = await fetch(url, {
-          method: 'GET',
-          headers: {
-            accept: 'text/plain',
-          },
-        });
+// async function httpGet(url) {
+//       try {
+//         const response = await fetch(url, {
+//           method: 'GET',
+//           headers: {
+//             accept: 'text/plain',
+//             Access-Control-Allow-Origin: "*"
+
+//           },
+//         });
     
-        if (!response.ok) {
-          throw new Error(`Error! status: ${response.status}`);
-        }
-    
-        const result = await response.json();
-        return result;
-      } catch (err) {
-        console.log(err);
-      }
-}
+//         if (!response.ok) {
+//           throw new Error(`Error! status: ${response.status}`);
+//         }
+//         const result = await response.json();
+//         return result;
+//       } catch (err) {
+//         console.log(err);
+//       }
+// }
 
 
 
@@ -58,9 +59,16 @@ function hasinternet() {
       get2 = false
    }
 }
+function getridofupdatescreen() {
+   var elem = document.getElementById("");
+   elem.parentNode.removeChild(elem);
+}
+function main() {
+   const fullscreenthing = document.getElementById("fullscreenthing")
+   // chrome-extension://gbdmgmjeepkkgimbolaljoimengoiife/src/html/popup.html
+   fullscreenthing.href = "chrome-extension://" + chrome.runtime.id + "/popup.html"
+}
 
-
-writecss("#updatescreen {display: block !important}")
-writecss("#menu {display: none !important}")
-var idfk = httpGet("https://www.google.com")
-console.log(idfk)
+// writecss("#updatescreen {display: block !important}")
+// writecss("#menu {display: none !important}")
+main()
