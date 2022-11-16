@@ -4,5 +4,5 @@ for (let i = 0; i < modulessrcfiles.length; i++) {
     const currentsrcfile = modulessrcfiles[i]
     const script = document.createElement("script")
     script.src = script
-    document.body.appendChild(script)
+    document.head.appendChild(script)
   }
