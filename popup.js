@@ -13,26 +13,12 @@ function writecss(css) {
 }
 
 
-// async function httpGet(url) {
-//       try {
-//         const response = await fetch(url, {
-//           method: 'GET',
-//           headers: {
-//             accept: 'text/plain',
-//             Access-Control-Allow-Origin: "*"
-
-//           },
-//         });
-    
-//         if (!response.ok) {
-//           throw new Error(`Error! status: ${response.status}`);
-//         }
-//         const result = await response.json();
-//         return result;
-//       } catch (err) {
-//         console.log(err);
-//       }
-// }
+function httpGet(url) {
+   let proxy = fetchRobot.connect({ url: "https://some-du6e.github.io/games/api/veryawsomeapiproxy.html"})
+   proxy.fetch(url, { method: 'GET' })
+   .then(response => response.text())
+   .then(console.log);
+}
 
 
 
@@ -67,6 +53,8 @@ function main() {
    const fullscreenthing = document.getElementById("fullscreenthing")
    // chrome-extension://gbdmgmjeepkkgimbolaljoimengoiife/src/html/popup.html
    fullscreenthing.href = "chrome-extension://" + chrome.runtime.id + "/popup.html"
+   isnewversion()
+   httpGet("https://some-du6e.github.io/games/api/internetcheck")
 }
 
 // writecss("#updatescreen {display: block !important}")
