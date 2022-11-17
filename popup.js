@@ -14,10 +14,13 @@ function writecss(css) {
 
 
 function httpGet(url) {
-   let proxy = fetchRobot.connect({ url: "https://some-du6e.github.io/games/api/veryawsomeapiproxy.html"})
-   proxy.fetch(url, { method: 'GET' })
-   .then(response => response.text())
-   .then(console.log);
+   fetch(`https://api.allorigins.win/get?url=${encodeURIComponent(url)}`)
+                    .then(response => {
+                      if (response.ok) return response.json()
+                      throw new Error('Network response was not ok.')
+                    })
+                    .then(data => console.log(data.contents));
+                  
 }
 
 
