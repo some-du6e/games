@@ -20,7 +20,7 @@
     gap: 1px;  
     max-width: 1000px;
     width: calc(100%);
-    
+    padding-left: 35px;
   }
   
   #cards:hover > .card::after {
@@ -60,8 +60,8 @@
   
   /* -- ↓ ↓ ↓ extra card content styles ↓ ↓ ↓ -- */
   
-  h1, h2, h3, h4, span {
-    color: rgb(240, 240, 240);
+  h1, h2, h3, h4, h5, span, .card-info-wrapper {
+    color: rgb(140, 140, 140);
     font-family: "Comic Sans MS";
     font-weight: 400;
     margin: 0px;
@@ -75,6 +75,7 @@
     align-items: center;
     display: flex;
     height: 140px;
+    size: 140px;
     justify-content: center;
     overflow: hidden;
   }
