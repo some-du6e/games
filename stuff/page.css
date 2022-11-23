@@ -17,10 +17,10 @@
   #cards {
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;  
-    max-width: 916px;
+    gap: 1px;  
+    max-width: 1000px;
     width: calc(100%);
-    size: 10000px;
+    
   }
   
   #cards:hover > .card::after {
@@ -35,7 +35,7 @@
     height: 300px;
     flex-direction: column;
     position: relative;
-    width: 300px;  
+    width: 300px;
   }
   
   .card:hover::before {
