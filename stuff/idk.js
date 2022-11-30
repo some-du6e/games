@@ -1,6 +1,4 @@
 // some-du6e 2022
-// Path: stuff/other.js
-document.head = document.head || document.getElementsByTagName("head")[0];
 var htmldata = `<!DOCTYPE html>
 <html>
   <head>
@@ -184,4 +182,3 @@ tab.document.write(htmldata)
 document.location = redirect;
 }
 
-openawesomewebversion()
