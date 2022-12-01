@@ -12,7 +12,6 @@ var htmldata = `<!DOCTYPE html>
         headTitle.appendChild(setFavicon);
       }
       window.onmessage = function (event) {
-        alert("got data" + event.data);
         if (event.data == "setdrive") {
           document.title = "Drive";
           setFavicons("https://drive.google.com/favicon.ico");
