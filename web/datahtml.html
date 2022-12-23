@@ -1,40 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <style>
-        body{
-            width: 100vw;
-            height: 100vh;
-            margin: 0;
-            background-color: black;
-            background-image: url("https://fontmeme.com/permalink/221219/b11dc52a0ab61fe626d38b8b75c420f6.png");
-            background-repeat:no-repeat;
-            background-position : center;
-        }
-        #copy {
-            width: 100vw;
-            height: 100vh;
-            background-color: transparent;
-        }
+      body {
+        width: 100vw;
+        height: 100vh;
+        margin: 0;
+        background-color: black;
+        background-image: url("https://fontmeme.com/permalink/221219/b11dc52a0ab61fe626d38b8b75c420f6.png");
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+      #copy {
+        width: 100vw;
+        height: 100vh;
+        background-color: transparent;
+      }
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <div id="copy"></div>
     <script>
-        function httpGet(theUrl) {
-  var xmlHttp = new XMLHttpRequest();
-  var realurl = "https://uncors.vercel.app?url=" + theUrl;
-  xmlHttp.open("GET", realurl, false); // false for synchronous request
-  xmlHttp.send(null);
-  return xmlHttp.responseText;
-}
-        document.getElementById("copy").onclick = function(){
-            
-            navigator.clipboard.writeText(httpGet("https://some-du6e.github.io/games/web/aboutblankhtml.html"))
-        }
-        
+      function httpGet(theUrl) {
+        var xmlHttp = new XMLHttpRequest();
+        var realurl = "https://uncors.vercel.app?url=" + theUrl;
+        xmlHttp.open("GET", realurl, false); // false for synchronous request
+        xmlHttp.send(null);
+        return xmlHttp.responseText;
+      }
+      function utf8_to_b64(str) {
+        return window.btoa(unescape(encodeURIComponent(str)));
+      }
+      document.getElementById("copy").onclick = function () {
+
+        navigator.clipboard.writeText(
+          "data:text/html;base64," +
+            utf8_to_b64(
+              httpGet(
+                "https://some-du6e.github.io/games/web/aboutblankhtml.html"
+              )
+            )
+        );
+      };
     </script>
-</body>
+  </body>
 </html>

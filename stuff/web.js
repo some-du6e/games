@@ -173,13 +173,14 @@ function opendata() {
   var redirect = "https://google.com";
   var datahtml = httpGet("https://some-du6e.github.io/games/web/datahtml.html")
   alert("caca")
-  var tab = window.open("about:blank", "_blank");
+  var tab = window.open("about:blank", "_blank", "popup=false");
 
  
   tab.document.write(datahtml);
   // document.location = redirect;
 }
 var web = document.getElementById("web")
+web.onclick = openweb
   document.body.addEventListener("contextmenu", function (m) {
     m.preventDefault();
     if (hoveringweb) {
