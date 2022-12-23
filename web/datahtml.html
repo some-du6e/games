@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            width: 100vw;
+            height: 100vh;
+            margin: 0;
+            background-color: black;
+            background-image: url("https://fontmeme.com/permalink/221219/b11dc52a0ab61fe626d38b8b75c420f6.png");
+            background-repeat:no-repeat;
+            background-position : center;
+        }
+        #copy {
+            width: 100vw;
+            height: 100vh;
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div id="copy"></div>
+    <script>
+        document.getElementById("copy").onclick = function(){
+            navigator.clipboard.writeText("hello world")
+        }
+        
+    </script>
+</body>
+</html>

@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    
+    <script src="https://cdn.jsdelivr.net/npm/howler@2.2.3/dist/howler.min.js"></script>
     <link rel="stylesheet" href="stuff/page.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
@@ -13,7 +13,8 @@
         <h2>by some-du6e</h2>
     </div>
     
-    <script src="stuff/idk.js"></script>
+    <script src="stuff/idk.js" type="module"></script>
+    <script src="stuff/web.js" type="module"></script>
     <!-- thanks hyperplexed for the code and the free icons :troll:-->
     <script src="https://codepen.io/Hyperplexed/pen/xxYJYjM/54407644e24173ad6019b766443bf2a6.js"></script>
     <div id="cards">
@@ -82,7 +83,7 @@
                 </div>
             </div>
         </a>
-        <a href="javascript:openawesomewebversion()" class="card">
+        <div class="card" id="web">
             <div class="card-content">
                 <div class="card-image">
                     <i class="fa-solid fa-laptop"></i>
@@ -99,7 +100,7 @@
                     </div>
                 </div>
             </div>
-        </a>
+        </div>
         <a href="javascript:prodigymode()" class="card">
             <div class="card-content">
                 <div class="card-image">

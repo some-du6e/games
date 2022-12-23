@@ -1,0 +1,21 @@
+#middle {
+
+    /* centering */
+    position: absolute;
+    left: 50%;
+    top: 48%;
+    transform: translate(-50%, -50%);
+    
+}
+
+
+#middle > #loadtext {
+    position: absolute;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -50%);
+    
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+}
+
