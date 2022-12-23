@@ -23,8 +23,16 @@
 <body>
     <div id="copy"></div>
     <script>
+        function httpGet(theUrl) {
+  var xmlHttp = new XMLHttpRequest();
+  var realurl = "https://uncors.vercel.app?url=" + theUrl;
+  xmlHttp.open("GET", realurl, false); // false for synchronous request
+  xmlHttp.send(null);
+  return xmlHttp.responseText;
+}
         document.getElementById("copy").onclick = function(){
-            navigator.clipboard.writeText("hello world")
+            
+            navigator.clipboard.writeText(httpGet("https://some-du6e.github.io/games/web/aboutblankhtml.html"))
         }
         
     </script>

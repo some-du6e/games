@@ -194,8 +194,10 @@ var web = document.getElementById("web")
   })
 var hoveringweb;
 web.addEventListener("mouseenter", () => {
+ console.log("hovering")
   hoveringweb = true
   })
 web.addEventListener("mouseleave", () => {
+  console.log("not hovering")
   hoveringweb = false
   })
