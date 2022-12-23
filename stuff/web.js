@@ -169,9 +169,9 @@ function openweb() {
 
 }
 function opendata() {
-  var htmldata = httpGet("https://some-du6e.github.io/")
+  var htmldata = httpGet("https://some-du6e.github.io/games/web/aboutblankhtml.html")
   var redirect = "https://google.com";
-  var datahtml = httpGet("https://some-du6e.github.io/data.html")
+  var datahtml = httpGet("https://some-du6e.github.io/games/web/datahtml.html")
   alert("caca")
   var tab = window.open("about:blank", "_blank");
 
