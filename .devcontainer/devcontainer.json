@@ -1,0 +1,59 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
+{
+	"name": "Ubuntu",
+	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
+	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+	"features": {
+		"ghcr.io/devcontainers-contrib/features/jshint:1": {}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"jessemazzella.vscode-cat-ascii-faces",
+				"akamud.vscode-theme-onedark",
+				"sukumo28.wav-preview",
+				"JohnHarrison.bongocat-buddy",
+				"WilsonWong.caniuse-query",
+				"cezaraugusto.vscode-chrome-extesion-manifest-json-schema",
+				"nkosakul.copy-cat",
+				"pranaygp.vscode-css-peek",
+				"paulmolluzzo.convert-css-in-js",
+				"LeonardSSH.vscord",
+				"dbaeumer.vscode-eslint",
+				"GitHub.copilot",
+				"znck.grammarly",
+				"seatonjiang.gitmoji-vscode",
+				"ecmel.vscode-html-css",
+				"VisualStudioExptTeam.intellicode-api-usage-examples",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"xabikos.JavaScriptSnippets",
+				"SoftHeroes.jsobfuscator",
+				"yandeu.five-server",
+				"zhengrenzhe.nyan-cat",
+				"christian-kohler.npm-intellisense",
+				"esbenp.prettier-vscode",
+				"Kampfkarren.roblox-lua-autofills",
+				"standard.vscode-standard",
+				"stylelint.vscode-stylelint",
+				"sedders123.vscode-ytmusic",
+				"dtsvet.vscode-wasm"
+			]
+		}
+	},
+
+	// Features to add to the dev container. More info: https://containers.dev/features.
+	// "features": {},
+
+	// Use 'forwardPorts' to make a list of ports inside the container available locally.
+	 "forwardPorts": [5555],
+
+	// Use 'postCreateCommand' to run commands after the container is created.
+	// "postCreateCommand": "uname -a",
+
+	// Configure tool-specific properties.
+	// "customizations": {},
+
+	// Uncomment to connect as root instead. More info: https://aka.ms/dev-containers-non-root.
+	"remoteUser": "root"
+}

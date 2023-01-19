@@ -1,0 +1,32 @@
+{
+    "recommendations": [
+        "jessemazzella.vscode-cat-ascii-faces",
+				"akamud.vscode-theme-onedark",
+				"sukumo28.wav-preview",
+				"JohnHarrison.bongocat-buddy",
+				"WilsonWong.caniuse-query",
+				"cezaraugusto.vscode-chrome-extesion-manifest-json-schema",
+				"nkosakul.copy-cat",
+				"pranaygp.vscode-css-peek",
+				"paulmolluzzo.convert-css-in-js",
+				"LeonardSSH.vscord",
+				"dbaeumer.vscode-eslint",
+				"GitHub.copilot",
+				"znck.grammarly",
+				"seatonjiang.gitmoji-vscode",
+				"ecmel.vscode-html-css",
+				"VisualStudioExptTeam.intellicode-api-usage-examples",
+				"VisualStudioExptTeam.vscodeintellicode",
+				"xabikos.JavaScriptSnippets",
+				"SoftHeroes.jsobfuscator",
+				"yandeu.five-server",
+				"zhengrenzhe.nyan-cat",
+				"christian-kohler.npm-intellisense",
+				"esbenp.prettier-vscode",
+				"Kampfkarren.roblox-lua-autofills",
+				"standard.vscode-standard",
+				"stylelint.vscode-stylelint",
+				"sedders123.vscode-ytmusic",
+				"dtsvet.vscode-wasm"
+    ]
+}
