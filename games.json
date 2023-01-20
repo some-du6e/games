@@ -1,0 +1,8 @@
+{
+    "defaultfeatured": {
+    "slope": {
+        "name": "Slope",
+        "path": "game/slope"
+    }
+    }
+}
