@@ -25,4 +25,7 @@ h1 {
   width: 50px;
   height: 50px;
 }
-/**/
+#slogan {
+  display: inline-block;
+  align-content: center;
+}
