@@ -1,4 +1,3 @@
-versionrn = 2;
 function sleep(milliseconds) {
   const date = Date.now();
   let currentDate = null;
@@ -25,7 +24,7 @@ function isnewversion() {
   var get = httpGet("https://some-du6e.github.io/games/version");
 
   console.log(get);
-  if (versionrn == get) {
+  if (version == get) {
     return true;
   } else {
     return false;
@@ -41,21 +40,3 @@ function hasinternet() {
   }
   return get;
 }
-
-function toggleupdatescreen() {
-  if (
-    document.getElementById("updatescreeninupdatescreen").style.display ==
-    "block"
-  ) {
-    document.getElementById("updatescreeninupdatescreen").style.display =
-      "none";
-  } else {
-    document.getElementById("updatescreeninupdatescreen").style.display =
-      "block";
-  }
-}
-const fullscreenthing = document.getElementById("fullscreenthing");
-// chrome-extension://gbdmgmjeepkkgimbolaljoimengoiife/src/html/popup.html
-fullscreenthing.href =
-  "chrome-extension://" + chrome.runtime.id + "/popup.html";
-isnewversion()
