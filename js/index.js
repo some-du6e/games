@@ -12,9 +12,13 @@ function writecss(css) {
 }
 
 //function to get plain text from a site
-function httpGet(theUrl) {
+function httpGet(theUrl, nocors) {
   var xmlHttp = new XMLHttpRequest();
-  var realurl = "https://uncors.vercel.app?url=" + theUrl;
+  if (nocors == true) {
+    var realurl = theUrl;
+  } else {
+    var realurl = "https://uncors.vercel.app?url=" + theUrl;
+  }
   xmlHttp.open("GET", realurl, false); // false for synchronous request
   xmlHttp.send(null);
   return xmlHttp.responseText;
@@ -39,4 +43,14 @@ function hasinternet() {
     get = false;
   }
   return get;
+}
+function randomcat() {
+  var json  = httpGet("https://cataas.com/cat", true)
+  var lol = json
+  console.log(lol)
+  return lol
+}
+function setrandomcat() {
+  console.log("eric cartman")
+  document.getElementById("cat").src = "https://cataas.com/cat"
 }
