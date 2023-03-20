@@ -1,0 +1,27 @@
+body {
+    background: #2c2c2c;
+    color: #000;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#heading {
+    background: #2c2c2c;
+    color: #dad9d9;
+    padding: 10px;
+    margin: 0;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+}
+.stupidhorizontalline {
+    
+    height: 1px;
+    background: linear-gradient(to right, #2c2c2c, white, #2c2c2c);
+    margin: 0;
+    padding: 0;
+    width: calc(100% + 10px);
+}
