@@ -4,4 +4,5 @@
 
 # games
 
-chrome extencion that has a bunch of good games
+chrome extension that has a bunch of good games
+games compiled by 3hk0 (https://github.com/3hk0)
